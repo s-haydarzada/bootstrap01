@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #008374;
+}
+body .container .row .navbar {
+  background-color: #008374 !important;
+}
+body .container .row .navbar h1 {
+  color: white;
+}
+body .container .row .navbar .nav-item {
+  margin-right: 5px;
+}
+body .container .row .navbar .nav-item .nav-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+  position: relative;
+}
+body .container .row .navbar .nav-item .nav-link::before {
+  content: "";
+  background-color: coral;
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  transition: 0.5s;
+}
+body .container .row .navbar .nav-item .nav-link:hover::before {
+  width: 100%;
+}
+body .container .row .navbar .nav-item:hover .nav-link {
+  color: white;
+}
+body .container .row .navbar .nav-item:nth-child(1) .nav-link {
+  color: white;
+  text-decoration-color: white;
+  position: relative;
+}
+body .container .row .navbar .nav-item:nth-child(1) .nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 10px;
+  width: 80%;
+  height: 2px;
+  background-color: coral;
+}
+body .container .row .text {
+  color: #8DC8C1;
+}
+body .container .row .btn {
+  font-size: 20px;
+}
+body .container .row .btn:nth-child(1) {
+  width: 200px;
+  background-color: #1A9082;
+  border-radius: 30px;
+  border: 2px solid #8DC8C1;
+}
+body .container .row .btn:nth-child(1):hover {
+  background-color: #1A9082;
+}
+body .container .row .btn:nth-child(2) {
+  width: 200px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+body .container .row .btn:nth-child(2) svg {
+  margin-right: 5px;
+}
+body .container .row .btn:nth-child(2):hover svg {
+  color: white;
+}
+body .container .row .btn:nth-child(2):hover {
+  color: white;
+}
+body .container .row a {
+  text-decoration: none;
+}
+body .container .row a .title {
+  color: white;
+  font-weight: 800;
+  font-size: 50px;
+  text-decoration: none;
+}
+body .container .row .card {
+  background-color: #008d7d;
+  transition: 1s;
+}
+body .container .row .card-body {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+body .container .row .card svg {
+  color: #06b6a2;
+  transition: 1s;
+}
+body .container .row .card:hover {
+  background-color: #06b6a2;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+body .container .row .card:hover svg {
+  color: white;
+}/*# sourceMappingURL=style.css.map */
